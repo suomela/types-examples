@@ -1,9 +1,0 @@
-*.pyc
-etc/config.inc
-bin/
-build/
-debug/
-dep/
-template/
-tmp/
-loginfile

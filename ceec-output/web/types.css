@@ -1,0 +1,365 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic);
+
+/* general */
+
+body {
+    color: #000;
+    background-color: #ddd;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+p, h1, ul, li, table, tr, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 400;
+}
+
+h1, p, ul {
+    margin-bottom: 12px;
+}
+
+li {
+    list-style: none;
+    margin-left: 9px;
+}
+
+a:link, a:visited {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:link:hover, a:visited:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.active {
+    cursor: pointer;
+    color: #fff;
+    background-color: #337ab7;
+}
+
+.inactive {
+    cursor: pointer;
+    color: #337ab7;
+}
+
+.inactive:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+strong {
+    font-weight: 600;
+    color: #337ab7;
+}
+
+.small {
+    font-size: 0.85em;
+}
+
+.hidden {
+    display: none;
+}
+
+.key {
+    display: inline-block;
+    font-weight: 600;
+    background-color: #eee;
+    border: 1px solid black;
+    padding: 1px;
+    min-width: 2.5ex;
+    text-align: center;
+    margin: 2px;
+}
+
+h1.toolname {
+    margin-bottom: 0px;
+}
+
+p.toolversion {
+    margin-top: 0px;
+    color: #888;
+    margin-bottom: 24px;
+}
+
+/* general layout */
+
+.sidemenu {
+    width: 220px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.top, .bottom {
+    position: fixed;
+    left: 230px;
+    right: 10px;
+    overflow: auto;
+    background-color: #fff;
+}
+
+.top {
+    top: 10px;
+    height: calc(70% - 15px);
+}
+
+.bottom {
+    bottom: 10px;
+    height: calc(30% - 15px);
+}
+
+.zoomed .top {
+    top: 10px;
+    height: calc(30% - 15px);
+}
+
+.zoomed .bottom {
+    bottom: 10px;
+    height: calc(70% - 15px);
+}
+
+
+/* menu bar */
+
+.sidemenu {
+    font-weight: 400;
+    background-color: #ddd;
+    color: #777;
+}
+
+.sidemenu .title {
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.sidemenu .submenu {
+    background-color: #eee;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.sidemenu .menuitem {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+}
+
+.sidemenu ul li.control {
+    font-weight: 400;
+}
+
+.sidemenu ul li select {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    color: #000;
+    background-color: #fff;
+}
+
+/* main content */
+
+.message, .info {
+    margin: 20px;
+}
+
+.plot {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plotcontrol {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.plotcontrol label {
+    display: inline-block;
+    margin: 10px;
+}
+
+.plotcontrol label input {
+    margin-left: 10px;
+}
+
+/* tables */
+
+table {
+    border-collapse: collapse;
+    border-bottom: 4px solid #ccc;
+    border: 20px solid #fff;
+}
+
+tr {
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+
+td, th {
+    vertical-align: top;
+    white-space: nowrap;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+th {
+    background-color: #ccc;
+    font-weight: 600;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+th.inactive {
+    color: #000;
+}
+
+.wrap {
+    white-space: normal;
+}
+
+.bar_pad {
+    margin-left: 10px;
+}
+
+.bar0 {
+    border-left: 0px solid #337ab7;
+    border-right: 0px solid #eee;
+}
+
+.bar1 {
+    border-left: 0px solid #eee;
+}
+
+.bar2 {
+    border-left: 0px solid #aaa;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+td.word {
+    text-align: center;
+}
+
+td.before, td.after {
+    min-width: 300px;
+    max-width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+td.before span {
+    position: absolute;
+    right: 5px;
+}
+
+td.after span {
+    position: absolute;
+    left: 0px;
+}
+
+.clickable, .home {
+    cursor: pointer;
+}
+
+.clickable:hover {
+    background-color: #eee;
+}
+
+.selected {
+    color: #337ab7;
+    background-color: #eee;
+    border-right: 20px solid #000;
+}
+
+.selected td {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+.highlighted {
+    background-color: #eee;
+}
+
+.highlighted td {
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+
+
+/* SVG plots */
+
+text.pointlabel {
+    font: 16px 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+}
+
+.axis text {
+    font: 16px 'Source Sans Pro', sans-serif;
+}
+
+rect.pointlabelbg1 {
+    fill: #fff;
+    stroke: #000;
+    stroke-width: 0.5px;
+    cursor: pointer;
+}
+
+rect.pointlabelbg2 {
+    fill: #fff;
+    stroke-width: 5px;
+    cursor: pointer;
+}
+
+path.point {
+    stroke: #fff;
+    fill: #000;
+    stroke-width: 1.5px;
+    cursor: pointer;
+}
+
+path.curve {
+    stroke: #fff;
+    stroke-width: 0.7px;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+rect.bg {
+    fill: #fff;
+}

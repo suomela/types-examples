@@ -41,6 +41,9 @@ This data set is based on the following sources:
 The results are linked with the BNCweb web interface (Lancaster University).
 To access BNCweb, you will need a user account.
 
+Scripts related to the construction of this data set are available at
+https://github.com/suomela/bnc-affix
+
 
 Case study: CEEC, -ity, and -ness
 ---------------------------------
@@ -54,7 +57,7 @@ Directory `bnc-output` shows the end result after running:
 
 This data set is based on the following sources:
 
-  - Corpus of Early English Correspondence (CEEC):
+  - Corpus of Early English Correspondence (CEEC),
     http://www.helsinki.fi/varieng/CoRD/corpora/CEEC/
 
 The results are linked with the CEECer web interface (University of Helsinki),

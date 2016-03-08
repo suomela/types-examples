@@ -15,6 +15,11 @@ Open the following files in your web browser and explore:
     bnc-output/web/index.html
     ceec-output/web/index.html
 
+These are also available at:
+
+  - http://users.ics.aalto.fi/suomela/types2/bnc/
+  - http://users.ics.aalto.fi/suomela/types2/ceec/
+
 
 Directories
 -----------
@@ -62,6 +67,16 @@ This data set is based on the following sources:
 
 The results are linked with the CEECer web interface (University of Helsinki),
 To access BNCweb, you will need a user account.
+
+
+Running times
+-------------
+
+With default parameters, on a typical desktop computer
+(Apple iMac late 2015, with a 4-core 3.2-GHz Intel Core i5):
+
+  - BNC: approx. 6 min
+  - CEEC: approx. 5 min
 
 
 Authors

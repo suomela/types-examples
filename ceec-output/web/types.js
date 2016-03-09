@@ -1244,7 +1244,7 @@ View.prototype.set_info = function(model) {
 
     if (corpus) {
         t = [];
-        t.push("Corpus ");
+        t.push("The corpus ");
         t.push(["strong", model.sel.corpuscode]);
         t.push(" contains ");
         t.push(f_large(corpus.samplecount) + " samples");
@@ -1256,7 +1256,7 @@ View.prototype.set_info = function(model) {
 
     if (dataset) {
         t = [];
-        t.push("Dataset ");
+        t.push("The dataset ");
         t.push(["strong", model.sel.datasetcode]);
         t.push(" contains ");
         t.push(f_large(dataset.hapaxes) + " " + model.db.data.label.hapax.labeltext);
@@ -1270,7 +1270,7 @@ View.prototype.set_info = function(model) {
 
     if (p) {
         t = [];
-        t.push("Collection ");
+        t.push("The collection ");
         t.push(["strong", model.sel.collectioncode]);
         t.push(" contains ");
         t.push(f_large(p.x) + " " + stat.xlabel);
@@ -1281,9 +1281,9 @@ View.prototype.set_info = function(model) {
 
         t = [];
         if (p.fraction <= config.p_threshold) {
-            t.push("Only approx. ");
+            t.push("Only ");
         } else {
-            t.push(" Approx. ");
+            t.push("Approximately ");
         }
         t.push(["strong", f_fraction(100 * p.fraction) + "%"]);
         t.push(" of random collections with ");
@@ -1306,7 +1306,7 @@ View.prototype.set_info = function(model) {
                 t.push(".");
             } else {
                 t.push("This finding is probably interesting:");
-                t.push(" the false discovery rate is approx. ");
+                t.push(" the false discovery rate is ");
                 t.push(["strong", f_fraction(p.fdr)]);
                 t.push(".");
             }

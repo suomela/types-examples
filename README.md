@@ -1,5 +1,5 @@
-Type and hapax accumulation curves — examples
-=============================================
+types2: Type and hapax accumulation curves — examples
+=====================================================
 
 Sample data for https://github.com/suomela/types
 

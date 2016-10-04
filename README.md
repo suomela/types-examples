@@ -53,13 +53,6 @@ https://github.com/suomela/bnc-affix
 Case study: CEEC, -ity, and -ness
 ---------------------------------
 
-The input data is in directory `bnc-input`.
-
-Directory `bnc-output` shows the end result after running:
-
-    types-run
-    types-web
-
 This data set is based on the following sources:
 
   - Corpus of Early English Correspondence (CEEC),

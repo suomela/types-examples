@@ -79,6 +79,15 @@ With default parameters, on a typical desktop computer
   - CEEC: approx. 5 min
 
 
+
+Acknowledgements
+----------------
+
+Data cited herein have been extracted from the British National Corpus,
+distributed by the University of Oxford on behalf of the BNC Consortium.
+All rights in the texts cited are reserved.
+
+
 Authors
 -------
 

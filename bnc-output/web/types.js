@@ -268,14 +268,14 @@ var Plot = function(view) {
     };
     var label;
     label = this.ctrldiv.append("label").text("X ticks:");
-    this.settings_yticks = label.append("input")
+    this.settings_xticks = label.append("input")
         .attr("type", "range")
         .attr("min", "0")
         .attr("max", "10")
         .attr("value", "5")
         .on(on_settings);
     label = this.ctrldiv.append("label").text("Y ticks:");
-    this.settings_xticks = label.append("input")
+    this.settings_yticks = label.append("input")
         .attr("type", "range")
         .attr("min", "0")
         .attr("max", "10")
@@ -1261,9 +1261,9 @@ View.prototype.set_info = function(model) {
         t.push(" contains ");
         t.push(f_large(dataset.hapaxes) + " " + model.db.data.label.hapax.labeltext);
         t.push(", ");
-        t.push(f_large(dataset.tokens) + " " + model.db.data.label.type.labeltext);
+        t.push(f_large(dataset.types) + " " + model.db.data.label.type.labeltext);
         t.push(", and ");
-        t.push(f_large(dataset.types) + " " + model.db.data.label.token.labeltext);
+        t.push(f_large(dataset.tokens) + " " + model.db.data.label.token.labeltext);
         t.push(".");
         textmaker(this.info.append("p"), t);
     }
@@ -1751,7 +1751,7 @@ Database.prototype.setup_statcodes = function() {
     this.statcode_map = {};
     for (var i = 0; i < config.statcodes.length; ++i) {
         var statcode = config.statcodes[i];
-        if (this.data.stat[statcode]) {
+        if (this.data.stat[statcode] && this.data.defaultstat['v'].includes(statcode)) {
             var x = this.data.stat[statcode].x;
             var y = this.data.stat[statcode].y;
             var xlabel = this.data.label[x].labeltext;

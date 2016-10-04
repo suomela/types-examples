@@ -1,3 +1,9 @@
 table.results tbody tr[data-statcode="token-word"] {
     color: #bbb;
 }
+
+#extrahelp {
+    margin-top: 30px;
+}
+
+#extrahelp:before { content: "Data cited herein have been extracted from the British National Corpus, distributed by the University of Oxford on behalf of the BNC Consortium. All rights in the texts cited are reserved." }

@@ -4,7 +4,7 @@ types2: Type and hapax accumulation curves — examples
 Sample data for https://github.com/suomela/types
 
 For more information, see
-http://users.ics.aalto.fi/suomela/types2/
+https://jukkasuomela.fi/types2/
 
 
 Quick start
@@ -17,8 +17,8 @@ Open the following files in your web browser and explore:
 
 These are also available at:
 
-  - http://users.ics.aalto.fi/suomela/types2/bnc/
-  - http://users.ics.aalto.fi/suomela/types2/ceec/
+  - https://jukkasuomela.fi/types2/bnc/
+  - https://jukkasuomela.fi/types2/ceec/
 
 
 Directories
@@ -85,7 +85,7 @@ Authors
 -------
 
   - Tanja Säily, University of Helsinki:
-    http://www.helsinki.fi/varieng/people/varieng_saily.html
+    https://tanjasaily.fi/
 
   - Jukka Suomela, Aalto University:
-    http://users.ics.aalto.fi/suomela/
+    https://jukkasuomela.fi/
